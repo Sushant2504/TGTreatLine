@@ -1,0 +1,17 @@
+{
+    "build": {
+      "production": {
+        "android": {
+          "buildType": "app-bundle",  
+          "gradleCommand": ":app:bundleRelease",
+          "withoutCredentials": false  
+        },
+        "ios": {
+          "enterpriseProvisioning": "auto"
+        }
+      }
+    },
+    "cli": {
+      "version": ">= 6.0.0"
+    }
+  }
