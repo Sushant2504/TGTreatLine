@@ -2,16 +2,16 @@
     "build": {
       "production": {
         "android": {
-          "buildType": "app-bundle",  
-          "gradleCommand": ":app:bundleRelease",
-          "withoutCredentials": false  
+          "buildType": "apk"
         },
         "ios": {
-          "enterpriseProvisioning": "auto"
+          "enterpriseProvisioning": "universal" 
+        }
+      },
+      "preview": {
+        "android": {
+          "buildType": "app-bundle"
         }
       }
-    },
-    "cli": {
-      "version": ">= 6.0.0"
     }
   }
